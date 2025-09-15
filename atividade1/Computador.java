@@ -1,16 +1,14 @@
-package atividade1;
-
 public class Computador {
     private Integer memoriaRAM; 
     private Integer ssd;
     private Integer nucleos;
-    private Double operacoesSegundo;
+    private Double operacoesSegundos;
 
-    public Computador(Integer memoriaRAM, Integer SSD, Integer nucleos, Double operacoesSegundo){
+    public Computador(Integer memoriaRAM, Integer SSD, Integer nucleos, Double operacoesSegundos){
         this.memoriaRAM = memoriaRAM;
         this.ssd = SSD;
         this.nucleos = nucleos;
-        this.operacoesSegundo = operacoesSegundo;
+        this.operacoesSegundos = operacoesSegundos;
     }
 
     public Integer getMemoriaRAM(){
@@ -34,10 +32,10 @@ public class Computador {
         this.nucleos = nucleos;
     }
 
-    public Double getOperacoesSegundo(){
-        return this.operacoesSegundo;
+    public Double getOperacoesSegundos(){
+        return this.operacoesSegundos;
     }
-    public void setOperacoesSegundo(Double operacoesSegundos){
-        this.operacoesSegundo = operacoesSegundo;
+    public void setOperacoesSegundos(Double operacoesSegundos){
+        this.operacoesSegundos = operacoesSegundos;
     }
 }
