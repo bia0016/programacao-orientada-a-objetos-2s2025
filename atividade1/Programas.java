@@ -1,13 +1,11 @@
 public class Programas {
     private Integer memoriaRAMalocada;
     private Integer SSDocupado; 
-    private Integer nucleos;
     private Integer quantidadeOperacoes;
 
     public Programas(Integer memoriaRAMalocada, Integer SSDocupado, Integer nucleos, Integer quantidadeOperacoes){
         this.memoriaRAMalocada = memoriaRAMalocada;
         this.SSDocupado = SSDocupado;
-        this.nucleos = nucleos;
         this.quantidadeOperacoes = quantidadeOperacoes;
     }
 
@@ -23,13 +21,6 @@ public class Programas {
     }
     public void setSSDocupado(Integer SSDocupado){
         this.SSDocupado = SSDocupado;
-    }
-
-    public Integer getNucleos(){
-        return this.nucleos;
-    }
-    public void setNucleos(Integer nucleos){
-        this.nucleos = nucleos;
     }
 
     public Integer getQuantidadeOperacoes(){

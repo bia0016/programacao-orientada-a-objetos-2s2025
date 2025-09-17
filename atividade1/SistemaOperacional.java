@@ -3,7 +3,6 @@ public class SistemaOperacional {
 
     public SistemaOperacional(Computador computador){
         this.computador = computador;
-
     }
     public Computador getComputador(){
         return computador;
@@ -19,10 +18,6 @@ public class SistemaOperacional {
         }
         if(p.getMemoriaRAMalocada() > computador.getMemoriaRAM()){
             System.out.println("Erro: memoria RAM insuficiente para executar o programa.");
-            return false;
-        }
-        if (p.getNucleos() > computador.getNucleos()) {
-            System.out.println("Erro: O programa requer mais núcleos do que disponíveis.");
             return false;
         }
         Double tempoExecucao = (double) p.getQuantidadeOperacoes() / (computador.getOperacoesSegundos() * computador.getNucleos());
