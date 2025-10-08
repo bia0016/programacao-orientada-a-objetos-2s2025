@@ -1,12 +1,8 @@
 public class Funcionario extends Pessoa {
     private String cargo;
 
-    public Funcionario(String cargo){
-        this.cargo = cargo;
-    }
     public Funcionario(String nome, String email, String cargo){
-        this.nome = nome;
-        this.email = email;
+        super(nome, email);
         this.cargo = cargo;
     }
     

@@ -2,8 +2,7 @@ public class Usuario extends Pessoa {
     private Integer matricula;
     
     public Usuario (String nome, String email, Integer matricula){
-        this.nome = nome;
-        this.email = email;
+        super(nome, email);
         this.matricula = matricula;
     }
 

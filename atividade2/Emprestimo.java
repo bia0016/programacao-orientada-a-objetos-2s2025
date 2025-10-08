@@ -25,16 +25,10 @@ public class Emprestimo {
         System.out.println("Data de empréstimo: " + this.dataEmprestimo + " | " + "Data de devolução: " + this.dataDevolucao);
         System.out.println("- Dados do Locatário -");
         this.pessoa.exibirInfo();
-        if(material instanceof Livro){
-            System.out.println("- Livro -");
-            this.material.descricao();
-        }
-        else if(material instanceof Revista){
-            System.out.println("- Revista -");
-            this.material.descricao();
-        }
+        this.material.descricao();
+        System.out.println("- Revista -");
+        this.material.descricao();
         //System.out.println("- Dados do funcionário -");
         //this.pessoa.exibirInfo();
     }
-
 }
