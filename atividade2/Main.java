@@ -11,6 +11,18 @@ public class Main {
 
         int opcao;
 
+        //exemplo fixo
+        Instituicao i1 = new Instituicao("UCB", "123456", "Brasília-DF");
+        Livro l1 = new Livro("livro 1", 2025, "joao");
+        Emprestimo e1 = new Emprestimo(i1, l1, "22/10/2025", "23/10/2025");
+        emprestimos.add(e1);
+
+        //exemplo colecao
+        Instituicao i2 = new Instituicao("UCB", "12345678", "Brasilia-DF");
+        Colecao c1 = new Colecao("Biblioteca", 43);
+        Emprestimo e2 = new Emprestimo(i2, c1, "01/11/2025", "03/11/2025");
+        emprestimos.add(e2);
+
         do {
             System.out.println("===== SISTEMA DE BIBLIOTECA =====");
             System.out.println("1 - Cadastrar Usuário");
